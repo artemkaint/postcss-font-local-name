@@ -1,0 +1,33 @@
+{
+  "name": "postcss-font-local-name",
+  "version": "0.0.1",
+  "description": "PostCSS plugin that rename local defined font family to unique name",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "fonts",
+    "faces",
+    "local",
+    "web"
+  ],
+  "author": "Artem Soltynskiy <artemkaint@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/artemkaint/postcss-font-local-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/artemkaint/postcss-font-local-name/issues"
+  },
+  "homepage": "https://github.com/artemkaint/postcss-font-local-name",
+  "dependencies": {
+    "postcss": "^5.0.12",
+    "lodash": "^3.0.0"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "npm test"
+  }
+}
