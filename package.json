@@ -1,6 +1,6 @@
 {
   "name": "postcss-font-local-name",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "PostCSS plugin that rename local defined font family to unique name",
   "keywords": [
     "postcss",
@@ -25,8 +25,7 @@
     "postcss": "^5.0.12",
     "lodash": "^3.0.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "npm test"
   }
