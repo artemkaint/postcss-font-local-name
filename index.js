@@ -32,9 +32,11 @@ module.exports = postcss.plugin('postcss-font-local-name', function(opts) {
       return fontFamily.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1")
     });
 
-    css.walkDecls(/^(font-family|font)$/, function(decl) {
-      decl.value = decl.value.replace( new RegExp('(' + fontFamiliesRegexp.join('|') + ')', 'g'), function(m, font) {
-        return fontFamilies[font];
+    css.walkRules(/^(?!@font-face).+$/, function(rule) {
+      rule.walkDecls(/^(font-family|font)$/, function(decl) {
+        decl.value = decl.value.replace( new RegExp('(' + fontFamiliesRegexp.join('|') + ')', 'g'), function(m, font) {
+          return fontFamilies[font];
+        });
       });
     });
   };
